@@ -41,9 +41,13 @@ class Router
                 $method = $routeInfo[1];
             }
             // on execute avec call_user_func_array
-            call_user_func_array($method, $routeInfo[2]); 
+            echo call_user_func_array($method, $routeInfo[2]); 
+            
         }
-        echo call_user_func_array($method, $routeInfo[2]); 
+       
+       
+        
+
     }
     
 }
